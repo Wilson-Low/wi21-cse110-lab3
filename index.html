@@ -11,6 +11,7 @@
       <nav>
         <ul>
           <li><a href="#Fax">Facts</a></li>
+          <li><a href="#Schedule">Schedule</a></li>
           <li><a href="#Lang">Programming Languages</a></li>
           <li><a href="#Random">Ramble Stuff</a></li>
         </ul>
@@ -31,6 +32,53 @@
             <li>In Marshall college</li>
             <li>Currently living in the Bay Area</li>
           </ul>
+        </section>
+        <section>
+          <h3 id="Schedule">My schedule for 2020-2021 so far:</h3>
+          <table>
+            <caption>My Schedule</caption>
+            <colgroup>
+              <col>
+              <col span="2" class="known">
+              <col span="1" class="unknown">
+            </colgroup>
+            <tr>
+              <td> </td>
+              <th scope="col">Fall</th>
+              <th scope="col">Winter</th>
+              <th scope="col">Spring</th>
+            </tr>
+            <tr>
+              <th scope="row">For Fun</th>
+              <td>CHIN 10AD</td>
+              <td>CHIN 10BD</td>
+              <td>CHIN 10CD</td>
+            </tr>
+            <tr>
+              <th scope="row">GE's</th>
+              <td>MATH 18</td>
+              <td>COGS 151</td>
+              <td>COGS 17</td>
+            </tr>
+            <tr>
+              <th scope="row">Major</th>
+              <td>CSE 100</td>
+              <td>CSE 101</td>
+              <td>???</td>
+            </tr>
+            <tr>
+              <th scope="row">Major</th>
+              <td>CSE 105</td>
+              <td>CSE 110</td>
+              <td>???</td>
+            </tr>
+            <tr>
+              <th scope="row">Major</th>
+              <td>CSE 140</td>
+              <td>CSE 140L</td>
+              <td>???</td>
+            </tr>
+          </table>
         </section>
         <section>
           <h3 id="Lang">
@@ -86,8 +134,90 @@
           Don't know what a cat sounds like? Here you go.<br>
           <audio controls src="meow.mp3"></audio><br>
           Here's what you should do when you see a friendly cat.<br>
-          <video controls width = "500"> <source src="scritch.mp4"></video>
-          
+          <video controls width="500"> <source src="scritch.mp4"></video> <br>
+          If you'd like to subsribe to get more cat info, fill out the form below.<br>
+          <form action="" method="get" class="catSubscription">
+            <div class="catSubscription">
+              <label for="name">Type your name here: </label>
+              <input type="text" name="name" id="name" required>
+            </div>
+            <div class="catSubscription">
+              <label for="email">Type your email here:</label>
+              <input type="email" name="email" id="email" required>
+            </div>
+            <div class="catSubscription">
+              <label for="favoriteBreed">Choose your favorite breed:</label>
+              <select id="favoriteBreed">
+                <optgroup label="American">
+                    <option>The Maine Coon</option>
+                    <option>The American Shorthair</option>
+                </optgroup>
+                <optgroup label="Other">
+                    <option>The Scottish Fold</option>
+                    <option>The British Shorthair</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="catSubscription">
+              <fieldset>
+                <legend>Where do you live?</legend>
+            
+                <input type="radio" id="US" name="united states">
+                <label for="US">United States</label><br/>
+            
+                <input type="radio" id="Other" name="other">
+                <label for="Other">Other</label><br/>
+              </fieldset>
+            </div>
+            <div class="catSubscription">
+              <label for="reason">Why do you want to subscribe:</label>
+              <textarea id="reason" name="reasonWhy" rows="5" cols="33"></textarea>
+            </div>
+            <div class="catSubscription">
+              <label for="feeling">How are you feeling?</label>
+              <input list="userFeelings" id="feeling" name="feeling"/>
+              <datalist id="possibleFeelings">
+                <option value="Happy">
+                <option value="Sad">
+                <option value="Angry">
+                <option value="Tired">
+              </datalist>
+            </div>
+            <div class="catSubscription">
+              <input type="checkbox" id="checkCats" name="checkCats">
+              <label for="checkCats">Check if you like cats</label>
+            </div>
+            <div class="catSubscription">
+              <input type="color" id="color" name="color">
+              <label for="head">Choose your favorite color?</label>
+            </div>
+            <div class="catSubscription">
+              <label for="favoriteDay">What was your favorite day in 2020?</label>
+              <input type="date" id="favoriteDay" name="favoriteDay"
+                value="2020-01-01"
+                min="2020-01-01" max="2020-12-31">
+            </div>
+            <div class="catSubscription">
+              <label for="favoriteMonth">What was your favorite month in 2020?</label>
+              <input type="month" id="favoriteMonth" name="favoriteMonth"
+              min="2020-01" max="2020-12" value="2020-01">
+            </div>
+            <div class="catSubscription">
+              <label for="face">I need a picture of your face:</label>
+              <input type="file"
+                id="face" name="face"
+                accept="image/png, image/jpeg">
+            </div>
+            <div class="catSubscription">
+              <label for="phone">Can we get your phone number to spam you?</label>
+              <input type="tel" id="phone" name="phone"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+              <small>Format: 123-456-7890</small>
+            </div>
+            <div class="catSubscription">
+              <input type="submit" value="Subscribe!">
+            </div>
+          </form>
         </p>
         <hr>
         <p>
@@ -96,11 +226,19 @@
           Just kidding I can't make a fake looking button without JS <br>
           <svg viewBox="0 0 100 100" stroke="red" fill="grey" width ="100" height ="100">
             <circle cx="25" cy="25" r="25"></circle>
-          </svg>
-          A-ha nevermind I can make one with svg
+          </svg><br>
+          A-ha nevermind I can make one with svg. Now here's the real buttons:<br>
+          <button class="beepboop" type="button">Press me!</button>
+          <details>
+            <summary>Nothing is in here</summary>
+            nothing nothing nothing nothing nothing nothing nothing nothing
+          </details>
+          <template id="template">
+            <div>Invisible click me :0</div>
+          </template>
         </p>
       </section>
     </main>
-    <footer></footer>
+    <footer><p>© 2020 Wilson Low</p></footer>
   </body>
 </html>
