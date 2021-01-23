@@ -1,3 +1,13 @@
+@font-face {
+  font-family: sacramento;
+  src: url(/Sacramento/Sacramento-Regular.ttf);
+}
+
+h2 {
+  text-align: center;
+  color: teal;
+}
+
 .known {
   background-color: lightgreen;
 }
@@ -7,6 +17,7 @@
 }
 
 * {
+  text-align: left;
 }
 
 span {
@@ -15,6 +26,7 @@ span {
 
 div[class="catSubscription"] {
   color: rgb(33, 142, 179);
+  display: inline-block;
 }
 
 /* This effect occurs when the mouse hovers over a button */
@@ -40,12 +52,14 @@ ul > li {
 }
 
 h3 ~ aside {
+  font: 1.5em "sacramento";
 }
 
 li + li {
 }
 
 h3#Schedule {
+  text-decoration: underline dotted;
 }
 
 /* Box model */
@@ -69,4 +83,8 @@ iframe {
   padding: 1vh;
   height: 500px;
   width: 500px;
+}
+
+div.secret {
+  display: none;
 }
