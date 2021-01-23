@@ -1,32 +1,42 @@
 .known {
-  color: lightgreen;
+  background-color: lightgreen;
 }
 
 #Fax {
-  color: lightslategray;
+  color: #778899;
 }
 
 * {
 }
 
 span {
+  color: rgba(33, 142, 179, 0.75);
 }
 
 div[class="catSubscription"] {
+  color: rgb(33, 142, 179);
 }
 
 /* This effect occurs when the mouse hovers over a button */
 button:hover {
+  color: #1a2;
 }
 
 section,
 div {
+  color: hsl(350, 75%, 50%);
 }
 
 body table {
+  color: blue;
+  border-style: groove;
+  border-color: gold;
+  border-width: 5px;
+  border-radius: 20px;
 }
 
 ul > li {
+  color: hsla(120, 25%, 50%, 0.75);
 }
 
 h3 ~ aside {
