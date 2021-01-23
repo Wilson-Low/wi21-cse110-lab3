@@ -3,6 +3,12 @@
   src: url(/Sacramento/Sacramento-Regular.ttf);
 }
 
+@media screen and (min-width: 300px) {
+  body {
+    background-color: cornsilk;
+  }
+}
+
 h2 {
   text-align: center;
   color: teal;
@@ -62,6 +68,7 @@ h3 ~ aside {
 }
 
 li + li {
+  color: chocolate;
 }
 
 h3#Schedule {
@@ -100,4 +107,45 @@ video {
   left: 100px;
   min-width: 50%;
   max-width: 100vw;
+}
+
+/* Flexbox */
+ol.langList {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+ol.langList > li {
+  border-style: solid;
+  border-radius: 2px;
+  flex-grow: 1;
+}
+
+li.favoriteLang {
+  order: 4;
+}
+
+/* Grid */
+div.testGrid > p {
+  grid-area: header;
+}
+div.testGrid > content {
+  grid-area: notmain;
+}
+div.testGrid > div {
+  grid-area: main;
+}
+div.testGrid > figure {
+  grid-area: picture;
+}
+div.testGrid {
+  display: grid;
+  grid-template-columns: 100px 50px 100px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header"
+    "main . notmain"
+    "picture picture picture";
 }
