@@ -17,3 +17,22 @@ div[class="catSubscription"] {
 
 button:hover {
 }
+
+section,
+div {
+}
+
+body table {
+}
+
+ul > li {
+}
+
+h3 ~ aside {
+}
+
+li + li {
+}
+
+h3#Schedule {
+}
