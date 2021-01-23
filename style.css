@@ -1,0 +1,19 @@
+.known {
+  color: lightgreen;
+}
+
+#Fax {
+  color: lightslategray;
+}
+
+* {
+}
+
+span {
+}
+
+div[class="catSubscription"] {
+}
+
+button:hover {
+}
